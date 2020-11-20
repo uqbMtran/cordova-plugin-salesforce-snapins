@@ -34,12 +34,8 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 			<uses-permission android:name="android.permission.CAMERA" />
 		</config-file>
 
-		<edit-config file="AndroidManifest.xml" target="/manifest/uses-sdk" mode="merge">
-			<uses-sdk android:minSdkVersion="21" android:maxSdkVersion="28" />
-		</edit-config>
-
 		<source-file src="src/android/SalesforceSnapInsPlugin.java" target-dir="src/org/apache/cordova/salesforce" />
-		<!-- <source-file src="src/android/colors.xml" target-dir="src/res/values" /> -->
+		<source-file src="src/android/colors.xml" target-dir="res/values" />
 
 		<framework src="src/android/build.gradle" custom="true" type="gradleReference" />
 	</platform>
